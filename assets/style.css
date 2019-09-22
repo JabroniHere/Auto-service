@@ -36,6 +36,45 @@
     margin-right: 10px;
 }
 
-.services {
+
+
+.group {
+    width: 50%;
+}
+
+
+@media  (max-width: 768px) {
+    
+    .group {
+        width: 100%;
+    }
+
+    .car {
+        display: none;
+    }
+}
+
+
+
+.question {
+    color: #fff;
+    background: url(https://спб.апсервис.рф/bitrix/templates/service_dsf/images/bg4.jpg) no-repeat;
+    background-size: 100%;
     padding-top: 30px;
 }
+
+.ris {
+    border: 5px solid;
+    padding: 20px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
