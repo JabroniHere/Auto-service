@@ -58,7 +58,7 @@
 
 .question {
     color: #fff;
-    background: url(https://спб.апсервис.рф/bitrix/templates/service_dsf/images/bg4.jpg) no-repeat;
+    background: url(../img/question_bg.jpg) no-repeat center;
     background-size: 100%;
     padding-top: 30px;
 }
