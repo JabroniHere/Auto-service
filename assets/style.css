@@ -11,20 +11,21 @@
 .navbar-brand {
     padding-left: 20px;
 }
-.navbar-nav li {
-    padding-right: 15px;
-}
+
 
 .nav-link {
     font-size: 1.1em !important;
 }
 
 .number {
+    
     margin-top: 60px;
     position: absolute;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     width: 100%;
-    display: none;  
+    display: none; 
+    
+    
 }
 
 
@@ -101,6 +102,9 @@ input::-webkit-inner-spin-button {
 
     .number {
         display: initial;
+        display: flex;
+        justify-content: center;
+    
     }
 
 }
@@ -109,4 +113,36 @@ input::-webkit-inner-spin-button {
     .info {
          width: 100%;
      }
+ }
+
+ footer .container {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ .markers_social {
+     color: #fff;
+     list-style-type: none;
+     display: flex;
+     padding: 0;
+     justify-content: space-between;
+     margin: 0;
+    
+ }
+
+ .social_icons {
+    font-size: 25px;
+    width: 40px;;
+ }
+
+ .social {
+     color: #fff;
+ }
+
+ .social:hover {
+     color: dodgerblue;
+     transition: all .3s;
  }
