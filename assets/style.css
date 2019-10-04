@@ -115,7 +115,10 @@ input::-webkit-inner-spin-button {
      }
  }
 
- footer .container {
+
+ 
+/* Footer */
+footer .container {
     padding-top: 10px;
     padding-bottom: 15px;
     justify-content: center;
@@ -146,3 +149,4 @@ input::-webkit-inner-spin-button {
      color: dodgerblue;
      transition: all .3s;
  }
+/* !Footer */
