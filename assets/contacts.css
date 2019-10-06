@@ -62,6 +62,10 @@
          flex-wrap: wrap;
          justify-content: center;
     }
+
+    .message {
+        margin-top: 20px;
+    }
 }
 
 .adress {
