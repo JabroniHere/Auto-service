@@ -40,7 +40,7 @@
 
 /* Page */
 .page {
-    background: url(../img/contacts.jpg) no-repeat center;
+    background-image: linear-gradient(to right top, #2abc83, #26be8d, #26bf97, #28c1a0, #2ec2a8, #01bdb5, #00b8c0, #00b2c7, #00a2d2, #0090db, #007adb, #485fcf);
     background-size: cover;
     background-color: #ccccff;
      margin-top: 0px;

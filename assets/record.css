@@ -54,9 +54,20 @@
 
 
 /* Steps */
+
 .steps_block {
-    background-color: darkgrey;
+    background-color: #C2CBDC;
+  
 }
+
+.steps_block a {
+    color: #000;
+}
+
+.steps_block a:hover {
+    color: #000;
+}
+
 /* !Steps */
 
 

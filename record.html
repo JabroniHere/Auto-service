@@ -10,7 +10,11 @@
     
         <!-- Font Awesome-->
         <script src="assets/all.js"></script>
-    
+
+        <!-- Form validator -->
+        <script src="assets/validator.min.js"></script>
+        
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Auto-service</title>
@@ -56,7 +60,9 @@
                 </div>
               </nav>
 
-
+              <div class="number">
+                <a class="nav-link text-white" href="tel:380665555575">+38(066)-555-55-75</a>
+            </div>
 
 
 
@@ -66,25 +72,39 @@
 <!-- Steps -->
 <div class="steps">
   
-    <div class="container  pt-5">
+    <div class="container  pt-5 pb-5">
           <div class="row justify-content-around  text-center">
-                <div class="steps_block col-7 col-md-3 mb-2">
-                  <img class="w-100 " src="img/cars/car_mark.png">
-                  <h4>Вибір марки </h4>
-                  <p>Впишіть або виберіть марку авто.</p>
-                </div>
 
-                <div class="steps_block col-7 col-md-3 mb-2">
-                    <img class="w-100" src="img/cars/car_model.png">
-                    <h4>Вибір моделі </h4>
-                    <p>Впишіть або виберіть модель авто.</p>
-                  </div>
+                  
+                      <div class="steps_block col-7 col-md-3 mb-2">
+                          <a href="#mark">
+                        <img class="w-100 " src="img/cars/car_mark.png">
+                        <h4>Вибір марки </h4>
+                        <p>Впишіть або виберіть марку авто.</p>
+                      </a>
+                      </div>
+                  
 
-                  <div class="steps_block col-7 col-md-3 mb-2">
-                      <img class="w-100" src="img/cars/car_year.png">
-                      <h4>Вибір року </h4>
-                      <p>Впишіть або виберіть рік авто.</p>
-                  </div>
+                  
+                      <div class="steps_block col-7 col-md-3 mb-2">
+                          <a href="#model">
+                          <img class="w-100" src="img/cars/car_model.png">
+                          <h4>Вибір моделі </h4>
+                          <p>Впишіть або виберіть модель авто.</p>
+                        </a>
+                        </div>
+                      
+
+                 
+                        <div class="steps_block col-7 col-md-3 mb-2">
+                            <a href="#year">
+                            <img class="w-100" src="img/cars/car_year.png">
+                            <h4>Вибір року </h4>
+                            <p>Впишіть або виберіть рік авто.</p>
+                            </a>
+                        </div>
+                    
+                      
             </div>
    </div>
   
@@ -92,16 +112,16 @@
     
 
 <!-- Record -->
-<div class="record mt-5 pt-5 pb-5">
+<div class="record  pt-5 pb-5">
     <div class="container">
       <div class="record_text">
           <h3>Запис на ремонт</h3>
           <p>Вкажіть автомобіль і контактні дані</p>
     </div>
-      <form>
+      <form id="form">
   
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Марка авто">
+              <input type="text" class="form-control" placeholder="Марка авто" id="mark">
   
                 <div class="input-group-append">
                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,7 +136,7 @@
   
   
         <div class="input-group mt-2">
-              <input type="text" class="form-control" placeholder="Модель авто">
+              <input type="text" class="form-control" placeholder="Модель авто" id="model">
   
                 <div class="input-group-append">
                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,7 +151,7 @@
   
   
         <div class="input-group mt-2">
-              <input type="text" class="form-control" placeholder="Рік авто">
+              <input type="text" class="form-control" placeholder="Рік авто" id="year">
   
                 <div class="input-group-append">
                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -152,6 +172,7 @@
                     <input type="number" class="form-control" placeholder="Ваш телефон">
                 </div>
             </div>
+            <button type="button" class="btn btn-primary mt-2">Відправити</button>
   
   
   
@@ -192,23 +213,6 @@
 
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
