@@ -40,7 +40,7 @@
 
 /* Page */
 .page {
-    background-image: linear-gradient(to right top, #2abc83, #26be8d, #26bf97, #28c1a0, #2ec2a8, #01bdb5, #00b8c0, #00b2c7, #00a2d2, #0090db, #007adb, #485fcf);
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: cover;
     background-color: #ccccff;
      margin-top: 0px;
@@ -57,7 +57,11 @@
     
 }
 
-@media (max-width: 768px) {
+.message {
+    width: 50%;
+}
+
+@media (max-width: 991px) {
     .contact {
          flex-wrap: wrap;
          justify-content: center;
@@ -65,12 +69,15 @@
 
     .message {
         margin-top: 20px;
+        width: 100%;
     }
 }
 
 .adress {
-    width: 350px;
+    width: 50%;
 }
+
+
 
 .map-responsive {
     margin-top: 50px;

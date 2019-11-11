@@ -89,22 +89,22 @@
 
         <!-- Message -->
             <div class="message">
-                <form>
+                <form class="needs-validation" novalidate>
                     
                         <div class="form-row pb-2">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Ваше ім'я">
+                                <input type="text" class="form-control" placeholder="Ваше ім'я" required>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Ваш Email">
+                                <input type="text" class="form-control" placeholder="Ваш Email" required>
                             </div>
                         </div>
                     
                         
                         
-                        <input type="text" class="form-control mb-2"  placeholder="Тема повідомлення">
-                        <textarea class="form-control mb-2" placeholder="Текст"></textarea>
-                        <button type="button" class="btn btn-primary">Відправити</button>
+                        <input type="text" class="form-control mb-2"  placeholder="Тема повідомлення" required>
+                        <textarea class="form-control mb-2" placeholder="Текст" required></textarea>
+                        <button type="submit" class="btn btn-primary">Відправити</button>
                         
                 </form>
             </div>
@@ -162,6 +162,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
 
 
 </html>
